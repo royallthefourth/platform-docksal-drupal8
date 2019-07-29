@@ -44,6 +44,7 @@ build:
 
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
+    build: rm web/sites/default/settings.local.php  # it's included in the repository, but will interfere with the intended config
     # The deploy hook runs after your application has been deployed and started.
     deploy: |
         set -e
