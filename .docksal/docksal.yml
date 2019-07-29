@@ -1,0 +1,4 @@
+services:
+  db:
+    image: docksal/mariadb:10.2
+version: "2.1"
